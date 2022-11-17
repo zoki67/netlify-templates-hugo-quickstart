@@ -1,4 +1,6 @@
 # example netlify.toml
+[Settings]
+  ID = "eafc52a1-2d3d-4886-b731-889be03c7f55"
 [build]
   command = "hugo"
   functions = "netlify/functions"
@@ -6,12 +8,3 @@
 
 [build.environment]
   HUGO_VERSION = "0.101.0"
-
-[[plugins]]
-  package = "netlify-plugin-cypress"
-
-  [plugins.inputs.postBuild]
-    enable = true
-
-  [plugins.inputs]
-    enable = false
